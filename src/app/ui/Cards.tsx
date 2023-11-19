@@ -16,7 +16,7 @@ export function Cards({
       <div className="w-full flex justify-center">
         <div
           className={clsx(
-            "lg:grid lg:grid-cols-2 lg:gap-x-16 px-8 xl:px-32",
+            "lg:grid lg:grid-cols-2 lg:gap-x-16 px-4 md:px-8 xl:px-32",
             className
           )}
         >

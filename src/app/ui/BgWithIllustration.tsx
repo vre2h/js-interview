@@ -17,7 +17,7 @@ export function BgWithIllustration({
 }) {
   return (
     <div className={clsx("p-8 xl:p-32", className)}>
-      <div className="flex flex-col xl:flex-row gap-16">
+      <div className="flex flex-col xl:flex-row xl:gap-24">
         <div className="mb-12 xl:mb-0">
           <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             {title}{" "}

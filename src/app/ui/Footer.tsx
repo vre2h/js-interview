@@ -16,7 +16,7 @@ export function Footer({
     <footer className="py-16 flex flex-col items-center bg-gray-800 text-white">
       <h2 className="text-6xl mb-8">{title}</h2>
       <p className="font-bold mb-8">{description}</p>
-      <div className="mb-8 flex gap-4">
+      <div className="mb-8 flex flex-col sm:flex-row gap-4">
         {links.map(({ href, title }) => (
           <Link
             className="bg-white hover:bg-zinc-600	 hover:text-white rounded-2xl text-black text-xs px-4 py-2"

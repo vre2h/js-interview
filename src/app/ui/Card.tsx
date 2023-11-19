@@ -13,7 +13,7 @@ export function Card({ title, subtitle, price, href, linkTitle }: CardItem) {
   return (
     <div className="max-w-xl py-6 cursor-pointer">
       <div className="shadow-lg flex bg-white overflow-hidden h-64">
-        <div className="flex flex-col w-2/3 p-8">
+        <div className="flex flex-col w-full md:w-2/3 p-8">
           <h1 className="text-gray-900 font-bold text-2xl">{title}</h1>
           <p className="mt-2 text-gray-600 text-sm">{subtitle}</p>
 
@@ -27,7 +27,7 @@ export function Card({ title, subtitle, price, href, linkTitle }: CardItem) {
             {/* <h2 className="text-gray-400 font-bold">{price}</h2> */}
           </div>
         </div>
-        <div className="w-1/3">
+        <div className="hidden md:block w-1/3">
           <InterviewIllustration />
         </div>
       </div>
