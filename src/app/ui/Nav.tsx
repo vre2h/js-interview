@@ -5,13 +5,18 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useState } from "react";
 
-export function Nav() {
+export function Nav({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => setOpen((o) => !o);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav
+      className={clsx(
+        "bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600",
+        className
+      )}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
